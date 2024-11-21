@@ -1,0 +1,12 @@
+.circle-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+  background-image: url("../public/assets/photos/big-pic2.jpeg");
+  background-size: cover;
+  background-position: center;
+  clip-path: path("M150 0 Q200 150 350 150 Q500 150 550 300 T750 450 T1000 400");
+}
