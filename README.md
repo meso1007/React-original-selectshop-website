@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# SUNPOO - Fancy Cloth Brand Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Visit the site: [SUNPOO Official Website](https://sunpoostudio.vercel.app/)
 
-## Available Scripts
+Welcome to the official **SUNPOO** website repository. This project represents a high-end clothing brand offering a luxurious and refined e-commerce experience. With a focus on seamless navigation and elegant design, the website delivers a sophisticated online shopping platform that is both user-friendly and responsive across all devices. Built with the latest technologies, SUNPOO ensures that every interaction feels intuitive and the visuals remain chic and timeless.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# Main Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="./public/assets/README/main-page.png" alt="Main Page" style="max-width: 80%; height: auto;">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# Collection Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./public/assets/README/collection-page.png" alt="Collection Page" style="max-width: 80%; height: auto;">
 
-### `npm run build`
+# New Arrival Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <img src="./public/assets/README/newarrival-page.png" alt="New Arrival Page" style="max-width: 80%; height: auto;">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Label & Brand Page
 
-### `npm run eject`
+  <img src="./public/assets/README/brand-page.png" alt="Label & Brand Page" style="max-width: 80%; height: auto;">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Sale Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img src="./public/assets/README/sale-page.png" alt="Sale Page" style="max-width: 80%; height: auto;">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Cart Page
 
-## Learn More
+  <div style="flex: 1; padding-right: 20px; font-size: 20px;">
+    **Coming Soon**
+  </div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Login Page
 
-### Code Splitting
+  <div style="flex: 1; padding-right: 20px; font-size: 20px;">
+    **Coming Soon**
+  </div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+# Profile Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  <div style="flex: 1; padding-right: 20px; font-size: 20px;">
+    **Coming Soon**
+  </div>
+</div>
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Header
 
-### Advanced Configuration
+  <img src="./public/assets/README/header.png" alt="Header" style="max-width: 80%; height: auto;">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+# Footer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  <img src="./public/assets/README/footer.png" alt="Footer" style="max-width: 80%; height: auto;">
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Others
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+  <div>
+    <img src="./public/assets/README/other1.png" alt="Random Image 1" style="width: 100%; height: auto;">
+  </div>
+  <div>
+    <img src="./public/assets/README/other2.png" alt="Random Image 2" style="width: 100%; height: auto;">
+  </div>
+  <div>
+    <img src="./public/assets/README/other3.png" alt="Random Image 3" style="width: 100%; height: auto;">
+  </div>
+  <div>
+    <img src="./public/assets/README/other4.png" alt="Random Image 4" style="width: 100%; height: auto;">
+  </div>
+</div>
+
+## 🚀 Technologies Used
+
+- **JavaScript (React.js)**: Utilized to build dynamic and interactive user interfaces.
+- **Sass**: For modular, maintainable, and efficient styles.
+- **Tailwind CSS**: Ensures responsive design across devices.
+- **FontAwesome & Google Fonts**: For high-quality typography and icons.
+- **Axios**: For making API calls to fetch product data dynamically.
+- **React Router**: Manages routing and navigation in a single-page application.
+- **Node.js**: For the backend server to manage user authentication and data.
+
+---
+
+## 🔧 Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/meso1007/React-original-selectshop-website
+   cd fancy-cloth-brand
+   ```
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+   3, Run the development server:
+
+   ```bash
+   npm start
+   ```
+
+   This will start the app on your local machine, and you can view it by navigating to http://localhost:3000.
+
+   4, Build the project for production:
+
+   ```bash
+   npm run build
+   ```
+
+   The production build will be created in the build directory, optimized for performance.
+
+   5, Deploy to GitHub Pages: If you wish to deploy your app to GitHub Pages, run:
+
+   ```bash
+   npm run deploy
+   ```
+
+   This command will build the project and deploy it to the GitHub Pages branch.
+
+   6, Access the live version: Once deployed, your website will be accessible via the GitHub Pages URL, typically in the format:
+
+   ```bash
+   https://github.com/meso1007/React-original-selectshop-website
+   ```
