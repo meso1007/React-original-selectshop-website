@@ -44,7 +44,7 @@ function Header() {
     return (
         <>
             <div
-                className={`fixed top-0 left-0 h-full bg-white shadow-md transform transition-transform duration-300 z-30 border border-blue-700 ${
+                className={`hidden sm:block fixed top-0 left-0 h-full bg-white shadow-md transform transition-transform duration-300 z-30 border border-blue-700 ${
                     isMenuOpen ? 'translate-x-0' : '-translate-x-full'
                 }`}
             >
@@ -118,6 +118,39 @@ function Header() {
                     </div>
                 </header>
             </div>
+            <div className="sm:hidden bg-white shadow-md border-b border-blue-700">
+                <header className="flex justify-between items-center p-4">
+                    <a href="/" className="logo_font text-4xl font-bold">SUNPO</a>
+                    <button onClick={toggleMenu} className="text-2xl">
+                        <FiMenu />
+                    </button>
+                </header>
+                {/* Menu for small screens */}
+                {isMenuOpen && (
+                    <div className="bg-white shadow-md border-t border-blue-700">
+                        <nav className="flex flex-col space-y-4 p-4">
+                            <a href="/" className="text-lg">HOME</a>
+                            <a href="/new" className="text-lg">NEW ARRIVALS</a>
+                            <a href="/collections" className="text-lg">COLLECTIONS</a>
+                            <a href="/brands" className="text-lg">LABELS & BRANDS</a>
+                            <a href="/sale" className="text-lg text-red-600">SALE</a>
+                            <div className="flex items-center border border-black rounded-md overflow-hidden">
+                                <FiSearch className="text-gray-600 ml-2 text-2xl" />
+                                <input
+                                    type="text"
+                                    placeholder="Search"
+                                    className="border-none py-2 px-6 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                />
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <FaRegUser className="text-2xl" />
+                                <span>{userName}</span>
+                            </div>
+                            <ButtonCompo text="Login" bgColor="blue-800" textColor="white" hoverBgColor="white" hoverTextColor="black" />
+                        </nav>
+                    </div>
+                                    )}
+                                    </div>
         </>
     );
 }

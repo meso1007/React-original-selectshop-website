@@ -3,15 +3,17 @@
 @tailwind utilities;
 body {
   margin: 0;
-  font-family:"Druk Trial";
-  font-size:x-large;
+  font-family: "Druk Trial";
+  overflow: hidden;
+  height: 100%;
+  font-size: x-large;
   letter-spacing: 0.1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
