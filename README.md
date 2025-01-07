@@ -1,8 +1,8 @@
-# Fancy Cloth Brand Website "SUNPOO"
+# SUNPOO - Fancy Cloth Brand Website
 
-https://sunpoostudio.vercel.app/
+Visit the site: [SUNPOO Official Website](https://sunpoostudio.vercel.app/)
 
-Welcome to the official **Fancy Cloth Brand** website repository. This project is a sophisticated e-commerce platform for a high-end clothing brand. Designed to offer a seamless shopping experience, the website combines elegant visuals with intuitive user interaction. It is built using modern technologies, ensuring responsiveness across devices.
+Welcome to the official **SUNPOO** website repository. This project represents a high-end clothing brand offering a luxurious and refined e-commerce experience. With a focus on seamless navigation and elegant design, the website delivers a sophisticated online shopping platform that is both user-friendly and responsive across all devices. Built with the latest technologies, SUNPOO ensures that every interaction feels intuitive and the visuals remain chic and timeless.
 
 ---
 
