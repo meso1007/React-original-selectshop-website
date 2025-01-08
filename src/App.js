@@ -9,6 +9,7 @@ import Womens from "./Pages/Collections/Womens";
 import Shoes from "./Pages/Collections/Shoes";
 import Accessories from "./Pages/Collections/Accesaries";
 import Fragrances from "./Pages/Collections/Fragrances";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/shoes" element={<Shoes />} />
         <Route path="/accessories" element={<Accessories />} />
         <Route path="/fragrances" element={<Fragrances />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
