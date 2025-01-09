@@ -17,10 +17,6 @@ function ProductList({ title, href, products = [] }) {
         };
     }, []);
 
-    const handleClick = () => {
-        
-    };
-
     const handleSelectProduct = (productId) => {
         setSelectedProductId(productId === selectedProductId ? null : productId);  
     };

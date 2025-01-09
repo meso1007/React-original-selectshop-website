@@ -44,7 +44,7 @@ function Header() {
     return (
         <>
             <div
-                className={`hidden sm:block fixed top-0 left-0 h-full bg-white shadow-md transform transition-transform duration-300 z-30 border border-blue-700 ${
+                className={`hidden md:block fixed top-0 left-0 h-full bg-white shadow-md transform transition-transform duration-300 z-30 border border-blue-700 ${
                     isMenuOpen ? 'translate-x-0' : '-translate-x-full'
                 }`}
             >
@@ -116,7 +116,7 @@ function Header() {
                     </div>
                 </header>
             </div>
-            <div className="sm:hidden bg-white shadow-md border-b border-blue-700">
+            <div className="md:hidden fixed bg-white shadow-md border-b border-blue-700">
                 <header className="flex justify-between items-center p-4">
                     <a href="/" className="logo_font text-4xl font-bold">SUNPO</a>
                     <button onClick={toggleMenu} className="text-2xl">
@@ -132,7 +132,7 @@ function Header() {
                             <a href="/brands" className="text-lg">LABELS & BRANDS</a>
                             <a href="/sale" className="text-lg text-red-600">SALE</a>
                             <div className="flex items-center border border-black rounded-md overflow-hidden">
-                                <FiSearch className="text-gray-600 ml-2 text-2xl" />
+                                <FiSearch className="text-gray-600 ml-2 text-sm" />
                                 <input
                                     type="text"
                                     placeholder="Search"
@@ -143,7 +143,7 @@ function Header() {
                                 <FaRegUser className="text-2xl" />
                                 <span>{userName}</span>
                             </div>
-                            <ButtonCompo text="Login" bgColor="blue-800" textColor="white" hoverBgColor="white" hoverTextColor="black" />
+                            <ButtonCompo className='w-full' text="Login" bgColor="blue-800" textColor="white" hoverBgColor="white" hoverTextColor="black" />
                         </nav>
                     </div>
             )}

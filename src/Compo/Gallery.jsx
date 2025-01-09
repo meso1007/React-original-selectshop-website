@@ -22,9 +22,9 @@ const prices = [
 
 function Gallery() {
     return (
-        <div className="px-4 sm:px-8 lg:px-20 py-10">
+        <div className="px-4 md:px-8 lg:px-20 py-10">
             <h2 className="text-3xl text-center font mb-8">TRENDING NOW</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {images.map((image, index) => (
                     <div key={index} className="flex flex-col gap-5 overflow-hidden transition-transform duration-300">
                         <img 

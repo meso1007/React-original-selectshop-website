@@ -15,7 +15,7 @@ function Subscribe() {
 
     return (
         <>
-            <div className="hidden sm:flex text-white  items-end gap-10 mt-10 px-4 sm:px-8 lg:px-20 py-10 bg-blue-800">
+            <div className="hidden md:flex text-white items-end gap-10 mt-10 px-4 md:px-8 lg:px-20 py-10 bg-blue-800">
                 <div>
                     <h2 className="text-3xl font-bold mb-3">SUBSCRIBE TO SUNPO</h2>
                     <div className="w-full">
@@ -42,9 +42,9 @@ function Subscribe() {
                     </div>
                 </div>
             </div>
-            <div className='sm:hidden'>
-                <h2 className="text-3xl font-bold mb-3 px-4">SUBSCRIBE TO SUNPO</h2>
-                <form onSubmit={handleSubmit} className="flex flex-row">
+            <div className='md:hidden my-2 bg-blue-800'>
+                <h2 className="text-white text-3xl font-bold mb-3 px-4">SUBSCRIBE TO SUNPO</h2>
+                <form onSubmit={handleSubmit} className="flex flex-row justify-center">
                     <input 
                         type="email" 
                         placeholder="Enter your email" 

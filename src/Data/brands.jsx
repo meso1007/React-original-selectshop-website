@@ -14,7 +14,7 @@ const brands = [
 
     {
       name: "BALENCIAGA",
-      logo: "./assets/brands/Balenciaga.jpeg",
+      logo: "./assets/brands/balenciaga.jpeg",
       description:
         "Balenciaga is a luxury fashion house, recognized for its innovative, often futuristic designs that redefine modern fashion.",
     },

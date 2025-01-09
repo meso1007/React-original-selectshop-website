@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-200 text-gray-800 p-8">
             <div className="container mx-auto">
-                <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div className="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     <div>
                         <h2 className="font-bold mb-4 text-blue-800">Customer Service</h2>
                         <ul className='space-y-2 text-lg'>
@@ -76,7 +76,7 @@ const Footer = () => {
                         </ul>
                         <div className=''>
                             <ul className="flex flex-row gap-2 pl-3 mt-3 mb-6 items-center">
-                                <h2 className="font-bold">Follow us</h2>
+                                <h2 className="sm:block md:hidden lg:block font-bold">Follow us</h2>
                                 <li>
                                     <a href="#" className="flex items-center group">
                                         <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
