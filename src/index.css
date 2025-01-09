@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Druk Trial";
+  src: url("./fonts/Druk-Bold-Trial.otf");
+}
+
+@font-face {
+  font-family: "Hybrid";
+  src: url("./fonts/Hybrid_b.ttf");
+}
+
 body {
   margin: 0;
   font-family: "Druk Trial";
