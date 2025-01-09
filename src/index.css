@@ -15,7 +15,7 @@
 body {
   margin: 0;
   font-family: "Druk Trial";
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: x-large;
   letter-spacing: 0.1em;
   -webkit-font-smoothing: antialiased;
