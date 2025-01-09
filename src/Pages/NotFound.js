@@ -22,7 +22,9 @@ function NotFound() {
           margin: 0,
         }}
       >
-        404
+        <span className="bg-blue-800">4</span>
+        <span>0</span>
+        <span className="bg-blue-800">4</span>
       </h1>
       <p
         style={{

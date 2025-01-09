@@ -23,7 +23,7 @@ const Content = ({ imgRight, isButton, imageUrl, title, description, href }) => 
     } else {
         return (
             <>
-                <div className="flex flex-col md:flex-row justify-evenly items-center gap-20 px-20 mb-28">
+                <div className="mt-0 md:mt-28 flex flex-col md:flex-row justify-evenly items-center gap-20 px-20 mb-28">
                     <div className="md:w-1/2 image-container">
                         <img 
                             src={imageUrl} 

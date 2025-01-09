@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-200 text-gray-800 p-8">
             <div className="container mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     <div>
                         <h2 className="font-bold mb-4 text-blue-800">Customer Service</h2>
                         <ul className='space-y-2 text-lg'>
@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
                 
                 <div className="pt-4 border-t border-gray-100 text-lg">
-                    <div className='flex flex-row justify-between items-center'>
+                    <div className='mb-2 sm:mb-0 sm:flex flex-row justify-between items-center'>
                         <ul className='flex flex-row gap-10 underline mb-5'>
                             <li><a href="#" className="hover:underline hover:text-gray-800 hover:text-shadow">Privacy policy</a></li>
                             <li><a href="#" className="hover:underline hover:text-gray-800 hover:text-shadow">Terms and conditions</a></li>
