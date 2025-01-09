@@ -8,7 +8,7 @@ function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false); 
     const [isSubmenuOpen, setIsSubmenuOpen] = useState(false); 
-    const [timeoutId, setTimeoutId] = useState(null); // タイマー用のステート
+    const [timeoutId, setTimeoutId] = useState(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen); 
@@ -29,7 +29,7 @@ function Header() {
     }, []);
     const handleMouseEnter = () => {
         if (timeoutId) {
-            clearTimeout(timeoutId); // 既存のタイマーをクリア
+            clearTimeout(timeoutId);
         }
         setIsSubmenuOpen(true);
     };
@@ -37,8 +37,8 @@ function Header() {
     const handleMouseLeave = () => {
         const id = setTimeout(() => {
             setIsSubmenuOpen(false);
-        }, 300); // 300ms後にサブメニューを非表示にする
-        setTimeoutId(id); // 新しいタイマーを保存
+        }, 300);
+        setTimeoutId(id);
     };
 
     return (
@@ -63,7 +63,6 @@ function Header() {
                                     <span>NEW ARRIVALS</span>
                                 </a>
                                 
-                                {/* Hoverでサブメニューが表示される */}
                                 <div 
                                     className="relative" 
                                     onMouseEnter={handleMouseEnter} 
@@ -72,7 +71,6 @@ function Header() {
                                     <a href='/collections' className="flex items-center space-x-4">
                                         <span>COLLECTIONS</span>
                                     </a>
-                                    {/* サブメニュー */}
                                     {isSubmenuOpen && (
                                         <div className="absolute top-0 left-full ml-4 bg-white shadow-lg p-4 space-y-2 border border-gray-300 z-40">
                                             <a href="/mens" className="block text-gray-700 hover:text-blue-600">Men's</a>
@@ -113,7 +111,7 @@ function Header() {
                                 <FaRegUser className="text-2xl" />
                                 <span>{userName}</span>
                             </div>
-                            <ButtonCompo text="Login" className='w-full' bgColor='blue-800' textColor='white' hoverBgColor='white' hoverTextColor="black"/>
+                            <ButtonCompo text="Login" className='w-full' bgColor='blue-800' textColor='white' hoverBgColor='blue-900' hoverTextColor="white"/>
                         </div>
                     </div>
                 </header>
@@ -125,7 +123,6 @@ function Header() {
                         <FiMenu />
                     </button>
                 </header>
-                {/* Menu for small screens */}
                 {isMenuOpen && (
                     <div className="bg-white shadow-md border-t border-blue-700">
                         <nav className="flex flex-col space-y-4 p-4">
@@ -149,8 +146,8 @@ function Header() {
                             <ButtonCompo text="Login" bgColor="blue-800" textColor="white" hoverBgColor="white" hoverTextColor="black" />
                         </nav>
                     </div>
-                                    )}
-                                    </div>
+            )}
+            </div>
         </>
     );
 }
