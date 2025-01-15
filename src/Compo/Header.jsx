@@ -116,7 +116,8 @@ function Header() {
                     </div>
                 </header>
             </div>
-            <div className="md:hidden fixed bg-white shadow-md border-b border-blue-700">
+            {/* sm size */}
+            <div className="md:hidden fixed w-full z-40 bg-white shadow-md border-b border-blue-700">
                 <header className="flex justify-between items-center p-4">
                     <a href="/" className="logo_font text-4xl font-bold">SUNPO</a>
                     <button onClick={toggleMenu} className="text-2xl">
@@ -129,7 +130,7 @@ function Header() {
                             <a href="/" className="text-lg">HOME</a>
                             <a href="/new" className="text-lg">NEW ARRIVALS</a>
                             <a href="/collections" className="text-lg">COLLECTIONS</a>
-                            <a href="/brands" className="text-lg">LABELS & BRANDS</a>
+                            <a href="/brands" className="text-lg">LABELS and BRANDS</a>
                             <a href="/sale" className="text-lg text-red-600">SALE</a>
                             <div className="flex items-center border border-black rounded-md overflow-hidden">
                                 <FiSearch className="text-gray-600 ml-2 text-sm" />

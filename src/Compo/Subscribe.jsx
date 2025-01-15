@@ -42,8 +42,9 @@ function Subscribe() {
                     </div>
                 </div>
             </div>
-            <div className='md:hidden my-2 bg-blue-800'>
-                <h2 className="text-white text-3xl font-bold mb-3 px-4">SUBSCRIBE TO SUNPO</h2>
+            {/* for sm size */}
+            <div className='md:hidden py-8 mb-12 bg-blue-800'>
+                <h2 className="text-white text-3xl font-bold mb-3 px-4">Step into the World of SUNPO</h2>
                 <form onSubmit={handleSubmit} className="flex flex-row justify-center">
                     <input 
                         type="email" 

@@ -14,7 +14,8 @@ const Footer = () => {
     return (
         <footer className="bg-gray-200 text-gray-800 p-8">
             <div className="container mx-auto">
-                <div className="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div className='hidden sm:block'>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     <div>
                         <h2 className="font-bold mb-4 text-blue-800">Customer Service</h2>
                         <ul className='space-y-2 text-lg'>
@@ -64,6 +65,7 @@ const Footer = () => {
                             <li><a href="#" className="hover:underline">Dispute Resolution</a></li>
                         </ul>
                     </div>  
+                </div>
                 </div>
                 
                 <div className="pt-4 border-t border-gray-100 text-lg">
