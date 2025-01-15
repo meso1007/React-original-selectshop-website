@@ -14,10 +14,10 @@ const titles = [
     "LA POMMADE VIRGINALE",
 ];
 const prices = [
-    "44.00€",
-    "40.00€",
-    "150.00€",
-    "45.00€",
+    "$44.00",
+    "$40.00",
+    "$150.00",
+    "$45.00",
 ]
 
 function Gallery() {

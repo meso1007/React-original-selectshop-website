@@ -15,7 +15,7 @@ function NotFound() {
       </p>
       <a
         href="/"
-        className="mt-8 inline-block px-5 py-2 text-lg font-bold text-gray-900 bg-gray-200 rounded transition-all duration-300 ease-in-out hover:bg-blue-900 hover:text-white"
+        className="mt-8 inline-block px-5 py-2 text-lg font-bold text-white bg-blue-800 transition-all duration-300 ease-in-out hover:bg-blue-900 hover:text-white"
       >
         Back to Home
       </a>

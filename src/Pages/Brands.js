@@ -13,7 +13,7 @@ const Brands = () => {
           LABELS & BRANDS
         </h1>
         <h1 className="sm:hidden text-4xl font-bold mb-5">LABELS & BRANDS</h1>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 cursor-pointer">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 cursor-pointer">
           {brands.map((brand, index) => (
             <BrandCard key={index} brand={brand} />
           ))}

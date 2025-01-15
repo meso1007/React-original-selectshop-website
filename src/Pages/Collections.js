@@ -22,7 +22,7 @@ function Collections() {
         </div>
 
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="logo_font text-blue-800 text-8xl font-bold">
+          <h1 className="logo_font text-blue-800 text-5xl sm:text-8xl font-bold">
             COLLECTIONS
           </h1>
         </div>

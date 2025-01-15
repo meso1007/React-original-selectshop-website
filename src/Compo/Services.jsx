@@ -6,7 +6,7 @@ import { BiMessage } from "react-icons/bi";
 function Services() {
     return (
         <div className="px-4 md:px-8 lg:px-20 py-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
                 <div className="relative border border-blue-800 overflow-hidden">
                     <div className="p-8 px-6 transition-al0 duration-300 text-gray-700 group cursor-pointer">
                         <span className="absolute inset-0 bg-blue-800 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
