@@ -14,7 +14,22 @@ function Header() {
         setIsMenuOpen(!isMenuOpen); 
     };
 
+
+    // ウィンドウリサイズイベントを監視して状態を更新
     useEffect(() => {
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 768);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    // mousemoveイベントをデスクトップサイズのみに適用
+    useEffect(() => {
+        if (!isDesktop) return;
+
         const handleMouseMove = (event) => {
             if (event.clientX < 200) {
                 setIsMenuOpen(true);
@@ -23,17 +38,11 @@ function Header() {
             }
         };
         window.addEventListener('mousemove', handleMouseMove);
+
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
         };
-    }, []);
-    const handleMouseEnter = () => {
-        if (timeoutId) {
-            clearTimeout(timeoutId);
-        }
-        setIsSubmenuOpen(true);
-    };
-
+    }, [isDesktop]);
     const handleMouseLeave = () => {
         const id = setTimeout(() => {
             setIsSubmenuOpen(false);
