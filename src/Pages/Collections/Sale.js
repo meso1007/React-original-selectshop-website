@@ -33,7 +33,7 @@ function Sale() {
       </div>
 
       <div className="w-full flex flex-row justify-between px-4 sm:px-24 font-normal">
-        <h4>64 Results</h4>
+        <h4>{salelist.length} Results</h4>
         <div className="flex items-center">
           <h4>Views</h4>
           <MdSort className="ml-2" />
