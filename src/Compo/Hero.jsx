@@ -13,7 +13,7 @@ function Hero() {
                     loop
                 ></video>
                 <div className="relative z-10 flex items-center justify-center h-full">
-                    <h1 className="logo_font text-gray-200 text-8xl font-bold">SUNPO</h1>
+                    <h1 className="logo_font text-gray-200 text-5xl sm:text-8xl font-bold">SUNPO</h1>
                 </div>
                 <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
             </div>

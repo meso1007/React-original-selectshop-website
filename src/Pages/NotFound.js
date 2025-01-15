@@ -2,57 +2,20 @@ import React from "react";
 
 function NotFound() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-        backgroundColor: "#1a1a1a",
-        color: "#fff",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      <h1
-        style={{
-          fontSize: "6rem",
-          fontWeight: "bold",
-          letterSpacing: "4px",
-          margin: 0,
-        }}
-      >
-        <span className="bg-blue-800">4</span>
+    <div className="flex flex-col items-center justify-center h-screen bg-white text-black">
+      <h1 className="text-[6rem] font-bold tracking-wider m-0">
+        <span className="text-blue-800 px-2">4</span>
         <span>0</span>
-        <span className="bg-blue-800">4</span>
+        <span className="text-blue-800 px-2">4</span>
       </h1>
-      <p
-        style={{
-          fontSize: "1.5rem",
-          marginTop: "20px",
-          textAlign: "center",
-        }}
-      >
+      <p className="text-[1.5rem] mt-5 text-center">
         Sorry, the page you're looking for
         <br />
         doesn't exist.
       </p>
       <a
         href="/"
-        style={{
-          marginTop: "30px",
-          display: "inline-block",
-          padding: "10px 20px",
-          fontSize: "1rem",
-          fontWeight: "bold",
-          textDecoration: "none",
-          color: "#1a1a1a",
-          backgroundColor: "#fff",
-          borderRadius: "5px",
-          transition: "all 0.3s ease",
-        }}
-        onMouseEnter={(e) => (e.target.style.backgroundColor = "#eaeaea")}
-        onMouseLeave={(e) => (e.target.style.backgroundColor = "#fff")}
+        className="mt-8 inline-block px-5 py-2 text-lg font-bold text-gray-900 bg-gray-200 rounded transition-all duration-300 ease-in-out hover:bg-blue-900 hover:text-white"
       >
         Back to Home
       </a>
