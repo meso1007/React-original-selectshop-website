@@ -9,6 +9,8 @@ function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false); 
     const [isSubmenuOpen, setIsSubmenuOpen] = useState(false); 
     const [timeoutId, setTimeoutId] = useState(null);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen); 
@@ -74,7 +76,6 @@ function Header() {
                                 
                                 <div 
                                     className="relative" 
-                                    onMouseEnter={handleMouseEnter} 
                                     onMouseLeave={handleMouseLeave}
                                 >
                                     <a href='/collections' className="flex items-center space-x-4">
