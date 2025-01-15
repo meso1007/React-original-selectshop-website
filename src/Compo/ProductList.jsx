@@ -26,7 +26,7 @@ function ProductList({ title, href, products = [] }) {
             <div className={`min-h-screen transition-all duration-300`}>
                 <div className='flex flex-row justify-between items-center p-9 mr-10 pt-11'>
                     <h2 className='brand_logo text-3xl px-10'>{title}</h2>
-                    <ButtonCompo text="Shop Now" onClick={handleClick} color="blue" href={`${href}`}/>
+                    <ButtonCompo text="Shop Now" color="blue" href={`${href}`}/>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-12 ">
                     {products.length > 0 ? ( 
