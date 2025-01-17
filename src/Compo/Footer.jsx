@@ -69,68 +69,70 @@ const Footer = () => {
                 </div>
                 
                 <div className="pt-4 border-t border-gray-100 text-lg">
-                    <div className='mb-2 sm:mb-0 sm:flex flex-row justify-between items-center'>
-                        <ul className='flex flex-row gap-10 underline mb-5'>
-                            <li><a href="-" className="hover:underline hover:text-gray-800 hover:text-shadow">Privacy policy</a></li>
-                            <li><a href="-" className="hover:underline hover:text-gray-800 hover:text-shadow">Terms and conditions</a></li>
-                            <li><a href="-" className="hover:underline hover:text-gray-800 hover:text-shadow">Accessibility</a></li>
-                            <li><a href="-" className="hover:underline hover:text-gray-800 hover:text-shadow">Sitemap</a></li>
-                        </ul>
-                        <div className=''>
-                            <ul className="flex flex-row gap-2 pl-3 mt-3 mb-6 items-center">
-                                <h2 className="sm:block md:hidden lg:block font-bold">Follow us</h2>
-                                <li>
-                                    <a href="-" className="flex items-center group">
-                                        <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
-                                            <FaInstagram className="text-xl transition duration-300 ease-in-out group-hover:text-white " />
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="-" className="flex items-center group">
-                                        <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
-                                            <FaFacebook className="text-xl transition duration-300 ease-in-out group-hover:text-white  " />
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="-" className="flex items-center group">
-                                        <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-700">
-                                            <FaPinterestP className="text-xl transition duration-300 ease-in-out group-hover:text-white " />
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="-" className="flex items-center group">
-                                        <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
-                                            <FaTwitter className="text-xl transition duration-300 ease-in-out group-hover:text-white " />
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="-" className="flex items-center group">
-                                        <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
-                                            <FaSnapchatGhost className="text-xl transition duration-300 ease-in-out group-hover:text-white  " />
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="-" className="flex items-center group">
-                                        <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
-                                            <FaYoutube className="text-xl transition duration-300 ease-in-out group-hover:text-white " />
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>  
-                    </div>
-                    <p className="text-sm">
-                        'SUNPO' and the 'SUNPO' logo are trademarks of SUNPO UK Limited and are registered in numerous jurisdictions around the world.
-                    </p>
-                    <p className="text-sm">
-                        © Copyright 2024 SUNPO UK Limited. All rights reserved.
-                    </p>
-                </div>
+  <div className="mb-2 sm:mb-0 sm:flex sm:flex-col md:flex-row justify-between items-start sm:items-center">
+    <ul className="flex flex-wrap gap-4 sm:gap-6 underline mb-5">
+      <li><a href="-" className="hover:underline hover:text-gray-800 hover:text-shadow">Privacy policy</a></li>
+      <li><a href="-" className="hover:underline hover:text-gray-800 hover:text-shadow">Terms and conditions</a></li>
+      <li><a href="-" className="hover:underline hover:text-gray-800 hover:text-shadow">Accessibility</a></li>
+      <li><a href="-" className="hover:underline hover:text-gray-800 hover:text-shadow">Sitemap</a></li>
+    </ul>
+    <div className="sm:mt-4 md:mt-0">
+      <div className="flex flex-wrap items-center gap-4">
+        <h2 className="font-bold sm:w-full md:w-auto text-center md:text-left">Follow us</h2>
+        <ul className="flex flex-wrap gap-3 justify-center sm:justify-start mt-2">
+          <li>
+            <a href="-" className="group">
+              <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
+                <FaInstagram className="text-xl transition duration-300 ease-in-out group-hover:text-white" />
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="-" className="group">
+              <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
+                <FaFacebook className="text-xl transition duration-300 ease-in-out group-hover:text-white" />
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="-" className="group">
+              <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-700">
+                <FaPinterestP className="text-xl transition duration-300 ease-in-out group-hover:text-white" />
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="-" className="group">
+              <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
+                <FaTwitter className="text-xl transition duration-300 ease-in-out group-hover:text-white" />
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="-" className="group">
+              <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
+                <FaSnapchatGhost className="text-xl transition duration-300 ease-in-out group-hover:text-white" />
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="-" className="group">
+              <span className="relative rounded-md p-3 transition duration-300 ease-in-out group-hover:shadow-lg group-hover:bg-blue-800">
+                <FaYoutube className="text-xl transition duration-300 ease-in-out group-hover:text-white" />
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p className="text-sm mt-4 sm:mt-6 text-center md:text-left">
+    'SUNPO' and the 'SUNPO' logo are trademarks of SUNPO UK Limited and are registered in numerous jurisdictions around the world.
+  </p>
+  <p className="text-sm text-center md:text-left">
+    © Copyright 2024 SUNPO UK Limited. All rights reserved.
+  </p>
+</div>
             </div>
         </footer>
     );
