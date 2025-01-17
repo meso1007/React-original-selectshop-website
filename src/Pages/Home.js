@@ -22,6 +22,7 @@ function Home() {
         className="flex-grow"
         href="/new"
         title="Daily Curated Picks: Handpicked from the World's Top Brands and Boutiques"
+        smTitle="Discover Fresh Picks"
         products={acne}
       />
       {/* <ProductList

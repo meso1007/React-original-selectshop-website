@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ProductCard from '../Layout/ProductCard';
 import ButtonCompo from '../Layout/ButtonCompo';
 
-function ProductList({ title, href, products = [] }) { 
+function ProductList({ title, smTitle, href, products = [] }) { 
     const [isScrolled, setIsScrolled] = useState(false);
     const [selectedProductId, setSelectedProductId] = useState(null); // 選択された商品IDを保存
 
@@ -25,7 +25,8 @@ function ProductList({ title, href, products = [] }) {
         <>
             <div className={`min-h-screen transition-all duration-300`}>
                 <div className='flex flex-row justify-between items-center p-9 mr-10 pt-11'>
-                    <h2 className='brand_logo text-3xl px-10'>{title}</h2>
+                    <h2 className='hidden sm:block brand_logo text-3xl px-10'>{title}</h2>
+                    <h2 className='sm:hidden brand_logo text-3xl px-10'>{smTitle}</h2>
                     <ButtonCompo text="Shop Now" color="blue" href={`${href}`}/>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-12 ">
