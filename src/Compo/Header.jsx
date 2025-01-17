@@ -154,7 +154,7 @@ function Header() {
                                 <FaRegUser className="text-2xl" />
                                 <span>{userName}</span>
                             </div>
-                            <ButtonCompo className='w-full' text="Login" bgColor="blue-800" textColor="white" hoverBgColor="white" hoverTextColor="black" />
+                            <ButtonCompo className='w-full' href="/login" text="Login" bgColor="blue-800" textColor="white" hoverBgColor="white" hoverTextColor="black" />
                         </nav>
                     </div>
             )}
