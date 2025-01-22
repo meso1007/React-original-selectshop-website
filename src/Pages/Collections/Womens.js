@@ -4,6 +4,7 @@ import Footer from "../../Compo/Footer";
 import Showcase from "../../Compo/ShowCase";
 import { MdSort } from "react-icons/md";
 import womenslist from "../../Data/womenslist";
+
 function Womens() {
   return (
     <>
@@ -12,7 +13,7 @@ function Womens() {
       <div className="hidden sm:flex mb-8 border  border-blue-800">
         <img
           src="./assets/headerPic/woman.jpeg"
-          class="w-1/2 h-[37rem] object-cover img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+          className="w-1/2 h-[37rem] object-cover img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
           alt=""
         />
         <h1 className="flex justify-center items-center w-1/2 text-9xl  py-8  text-black font-semiboldZ        ">

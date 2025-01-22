@@ -121,7 +121,7 @@ function Header() {
                                 <FaRegUser className="text-2xl" />
                                 <span>{userName}</span>
                             </div>
-                            <ButtonCompo text="Login" className='w-full' bgColor='blue-800' textColor='white' hoverBgColor='blue-900' hoverTextColor="white"/>
+                            <ButtonCompo text="Login" href="/login" className='w-full' bgColor='blue-800' textColor='white' hoverBgColor='blue-900' hoverTextColor="white"/>
                         </div>
                     </div>
                 </header>

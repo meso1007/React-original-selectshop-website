@@ -11,6 +11,7 @@ import Accessories from "./Pages/Collections/Accesaries";
 import Fragrances from "./Pages/Collections/Fragrances";
 import Login from "./Pages/Login";
 import NotFound from "./Pages/NotFound";
+import SignUp from "./Pages/Signup";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/accessories" element={<Accessories />} />
         <Route path="/fragrances" element={<Fragrances />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
