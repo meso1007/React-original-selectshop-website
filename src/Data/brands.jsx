@@ -166,6 +166,19 @@ const brands = [
       description:
         "QBSAY is a fashion-forward streetwear brand blending urban aesthetics with modern, functional designs.",
     },
+    {
+      name: "PUMA",
+      logo: "./assets/brands/puma.jpeg",
+      description:
+        "PUMA is a global sports brand that fuses performance with style, creating innovative athletic and lifestyle products that inspire speed, strength, and individuality"
+    },
+    {
+      name: "EDEN Power Corp",
+      logo: "./assets/brands/edenpowercorp.avif",
+      description:
+        "EDEN Power Corp is a sustainable fashion and lifestyle brand that merges cutting-edge design with environmental responsibility, crafting innovative pieces that inspire a deeper connection to nature"
+    },
+    
   ];
   
   export default brands;

@@ -17,7 +17,6 @@ function Header() {
     };
 
 
-    // ウィンドウリサイズイベントを監視して状態を更新
     useEffect(() => {
         const handleResize = () => {
             setIsDesktop(window.innerWidth >= 768);
@@ -28,7 +27,6 @@ function Header() {
         };
     }, []);
 
-    // mousemoveイベントをデスクトップサイズのみに適用
     useEffect(() => {
         if (!isDesktop) return;
 
@@ -117,10 +115,10 @@ function Header() {
                             </div>
                         </div>
                         <div className='w-full p-4'>
-                            <div className="flex items-center space-x-2 mb-3">
+                            <a href='/profile' className="flex items-center space-x-2 mb-3">
                                 <FaRegUser className="text-2xl" />
                                 <span>{userName}</span>
-                            </div>
+                            </a>
                             <ButtonCompo text="Login" href="/login" className='w-full' bgColor='blue-800' textColor='white' hoverBgColor='blue-900' hoverTextColor="white"/>
                         </div>
                     </div>
