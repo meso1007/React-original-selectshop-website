@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const ButtonCompo = ({ 
     text,              
@@ -12,20 +13,65 @@ const ButtonCompo = ({
     className = '', 
     disabled = false 
 }) => {
+    const buttonVariants = {
+        rest: {
+            backgroundColor: bgColor,
+            color: textColor,
+            scale: 1,
+            transition: { duration: 0.3, ease: "easeOut" }
+        },
+        hover: {
+            scale: 1.05, // わずかに拡大
+            transition: { duration: 0.3, ease: "easeOut" }
+        }
+    };
+
+    const backgroundVariants = {
+        rest: {
+            x: "-100%",
+            transition: { duration: 0.3, ease: "easeOut" }
+        },
+        hover: {
+            x: "0%",
+            backgroundColor: hoverBgColor,
+            transition: { duration: 0.3, ease: "easeOut" }
+        }
+    };
+
+    const textVariants = {
+        rest: {
+            color: textColor,
+            transition: { duration: 0.3, ease: "easeOut" }
+        },
+        hover: {
+            color: hoverTextColor,
+            transition: { duration: 0.3, ease: "easeOut" }
+        }
+    };
+
     return (
         <div>
-            <button
+            <motion.button
                 type={type}
                 onClick={onClick}
-                className={`relative overflow-hidden border border-blue-800 text-${textColor} bg-${bgColor} px-4 py-0.5 font-semibold transition-colors duration-300 ease-in-out group ${className}`}
+                className={`relative overflow-hidden border border-blue-800 px-4 py-0.5 font-semibold group ${className}`}
                 disabled={disabled}
+                variants={buttonVariants}
+                initial="rest"
+                whileHover="hover"
+                animate="rest"
             >
                 <a href={`${href}`}>
-                <div className={`absolute top-0 left-0 w-full h-full bg-${hoverBgColor} transition-transform duration-300 ease-in-out transform -translate-x-full group-hover:translate-x-0`}></div>
-                
-                <span className={`relative z-10 text-${textColor} group-hover:text-${hoverTextColor} transition-colors duration-300 ease-in-out`}>{text}</span>
+                    <motion.div
+                        className={`absolute top-0 left-0 w-full h-full`}
+                        variants={backgroundVariants}
+                    ></motion.div>
+                    <motion.span
+                        className={`relative z-10`}
+                        variants={textVariants}
+                    >{text}</motion.span>
                 </a>
-            </button>
+            </motion.button>
         </div>
     );
 };
